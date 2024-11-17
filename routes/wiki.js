@@ -9,8 +9,14 @@ router.get("/", function (req, res) {
 });
 
 // About page route.
-router.get("/about", function (req, res) {
-  res.send("About this wiki");
+router.get("/about", (req, res, next) => {
+  About.find({}).exec((err, queryResults) => {
+    if (err) {
+      return next(err);
+    }
+    //Successful, so render
+    res.render("about_view", { title: "About", list: queryResults });
+  });
 });
 
 module.exports = router;
