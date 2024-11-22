@@ -1,5 +1,7 @@
 // https://github.com/mongodb-developer/nodejs-quickstart/blob/master/connection.js
 
+const Book = require("../models/book");
+
 var mongoose = require("mongoose");
 
 async function main() {
@@ -26,6 +28,7 @@ async function main() {
 
     console.log("Mongoose接続成功");
     await listDatabases();
+    await getCntBooks();
   } catch (e) {
     console.error(e);
   } finally {
@@ -44,4 +47,9 @@ async function listDatabases() {
 
   console.log("Databases:");
   databasesList.databases.forEach((db) => console.log(` - ${db.name}`));
+}
+
+async function getCntBooks(params) {
+  const cnt = await Book.countDocuments({}).exec();
+  console.log("books cnt:", cnt);
 }
