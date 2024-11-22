@@ -3,6 +3,7 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+const mongoose = require("mongoose");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
@@ -27,6 +28,17 @@ app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/catalog", catalogRouter); // Add catalog routes to middleware chain.
 app.use("/wiki", wiki);
+
+// MongoDBへの接続
+mongoose
+  .connect("mongodb://localhost:27017/", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 5000, // タイムアウト設定
+    connectTimeoutMS: 10000,
+  })
+  .then(() => console.log("MongoDB connected successfully"))
+  .catch((err) => console.log("MongoDB connection error:", err));
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

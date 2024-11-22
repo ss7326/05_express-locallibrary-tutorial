@@ -27,7 +27,7 @@ async function main() {
     });
 
     console.log("Mongoose接続成功");
-    await listDatabases();
+    // await listDatabases();
     await getCntBooks();
   } catch (e) {
     console.error(e);
