@@ -131,14 +131,20 @@
 
 - [ ] Express Tutorial Part 6: フォームの操作
   - [ ] 概要
-    - [ ] HTML フォーム
-    - [ ] Form handling process
-    - [ ] Validation and sanitization
-      - [ ] Installation
-      - [ ] Using express-validator
-    - [ ] Form design
-    - [ ] Routes
+    - [X] ~~*HTML フォーム*~~ [2024-12-06]
+    - [X] ~~*Form handling process*~~ [2024-12-06]
+    - [X] ~~*Validation and sanitization*~~ [2024-12-06]
+      - [X] ~~*Installation*~~ [2024-12-06]
+      - [X] ~~*Using express-validator*~~ [2024-12-06]
+    - [X] ~~*Form design*~~ [2024-12-06]
+    - [X] ~~*Routes*~~ [2024-12-06]
   - [ ] Express forms subarticles
+    - [ ] 1. ジャンルフォームの作成
+    - [ ] 2. 著者フォームの作成
+    - [ ] 3. ブックフォームの作成
+    - [ ] 4. BookInstance フォームの作成
+    - [ ] 5. 著者の削除フォーム
+    - [ ] 6. ブック更新フォーム
   - [ ] Challenge yourself
   - [ ] Summary
 
