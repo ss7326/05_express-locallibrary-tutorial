@@ -11,7 +11,19 @@ exports.index = asyncHandler(async (req, res, next) => {
     const cnt = await Book.countDocuments({}).exec();
     res.send(`Book count: ${cnt}`);
   } catch (error) {
-    console.error('Error counting documents:', error);
+    console.error("Error counting documents:", error);
     next(error);
   }
 });
+
+exports.test = (req, res, next) => {
+  res.render("test", {
+    title: "Test",
+    req: req,
+    res: res,
+    next: next,
+  });
+  // console.log(req);
+  // console.log(res);
+  // console.log(next);
+};

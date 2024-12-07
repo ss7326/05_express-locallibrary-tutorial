@@ -12,6 +12,8 @@ const test_controller = require("../controllers/testController");
 
 router.get("/test", test_controller.index);
 
+router.get("/test/test", test_controller.test);
+
 /// BOOK ROUTES ///
 
 // GET catalog home page.
