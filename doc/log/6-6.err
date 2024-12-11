@@ -1,0 +1,21 @@
+/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/views/book_form.pug:42 40| hr 41| p > 42| a(href=book.url+'/delete') Delete Book 43| p 44| a(href=book.url+'/update') Update Book 45| Cannot read properties of undefined (reading 'url')
+
+TypeError: /mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/views/book_form.pug:42
+    40|   hr
+    41|   p
+  > 42|     a(href=book.url+'/delete') Delete Book
+    43|   p
+    44|     a(href=book.url+'/update') Update Book
+    45|
+
+Cannot read properties of undefined (reading 'url')
+    at eval (eval at wrap (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:272:58)
+    at template (eval at wrap (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug-runtime/wrap.js:6:10), <anonymous>:312:135)
+    at exports.renderFile (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug/lib/index.js:418:38)
+    at exports.renderFile (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug/lib/index.js:408:21)
+    at exports.__express [as engine] (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug/lib/index.js:455:11)
+    at View.render (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/express/lib/view.js:135:8)
+    at tryRender (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/express/lib/application.js:640:10)
+    at Function.render (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/express/lib/response.js:1008:7)
+    at /mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/controllers/bookController.js:74:7
