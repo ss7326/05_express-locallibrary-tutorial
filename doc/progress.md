@@ -143,9 +143,12 @@
     - [X] ~~*2. 著者フォームの作成*~~ [2024-12-07]
     - [X] ~~*3. ブックフォームの作成*~~ [2024-12-08]
     - 4. BookInstance フォームの作成
-    - [ ] 5. 著者の削除フォーム
-    - [ ] 6. ブック更新フォーム
+    - [X] ~~*5. 著者の削除フォーム*~~ [2024-12-16]
+    - [X] ~~*6. ブック更新フォーム*~~ [2024-12-16]
   - [ ] Challenge yourself
+    - [ ] Book 削除フォーム
+    - [ ] BookInstance 削除フォーム
+    - [ ] Genre 削除フォーム
   - [ ] Summary
 
 - [ ] Express Tutorial Part 7: Deploying to production
