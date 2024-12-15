@@ -1,0 +1,22 @@
+/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/views/genre_delete.pug:6:21 4| 5| h1 #{title}: #{genre.name} > 6| p= genre.lifespan // ---------------------------^ 7| 8| if genre_books.length 9| Syntax Error: Line comments not allowed in an expression
+
+Error: /mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/views/genre_delete.pug:6:21
+    4|
+    5|   h1 #{title}: #{genre.name}
+  > 6|   p= genre.lifespan //
+---------------------------^
+    7|
+    8|   if genre_books.length
+    9|
+
+Syntax Error: Line comments not allowed in an expression
+    at makeError (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug-error/index.js:32:13)
+    at Lexer.error (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug-lexer/index.js:58:15)
+    at Lexer.assertExpression (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug-lexer/index.js:86:12)
+    at Lexer.code (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug-lexer/index.js:971:28)
+    at Lexer.callLexerFunction (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug-lexer/index.js:1319:23)
+    at Lexer.advance (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug-lexer/index.js:1352:15)
+    at Lexer.callLexerFunction (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug-lexer/index.js:1319:23)
+    at Lexer.getTokens (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug-lexer/index.js:1375:12)
+    at lex (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug-lexer/index.js:12:42)
+    at Object.lex (/mnt/d/D/21_code/D_prac/prep_TypeDuel/05_express-locallibrary-tutorial/node_modules/pug/lib/i
