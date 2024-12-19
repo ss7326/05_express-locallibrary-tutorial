@@ -146,9 +146,9 @@
     - [X] ~~*5. 著者の削除フォーム*~~ [2024-12-16]
     - [X] ~~*6. ブック更新フォーム*~~ [2024-12-16]
   - [ ] Challenge yourself
-    - [X] ~~*Book 削除フォーム*~~ [2024-12-16]
+    - [X] ~~*Genre 削除フォーム*~~ [2024-12-16]
+    - [X] ~~*Book 削除フォーム*~~ [2024-12-20]
     - [ ] BookInstance 削除フォーム
-    - [ ] Genre 削除フォーム
   - [ ] Summary
 
 - [ ] Express Tutorial Part 7: Deploying to production
