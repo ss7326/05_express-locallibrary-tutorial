@@ -104,7 +104,7 @@ exports.bookinstance_delete_get = asyncHandler(async (req, res, next) => {
 
   res.render("bookinstance_delete", {
     title: "Delete BookInstance",
-    book_instances: bookinstance,
+    bookinstance: bookinstance,
   });
 });
 
